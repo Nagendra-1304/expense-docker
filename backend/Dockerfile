@@ -10,6 +10,8 @@ COPY *.js .
 RUN npm install
 USER expense
 EXPOSE 8081
+RUN echo "Hello World"
+RUN echo "Hello docker"
 CMD ["node", "index.js"]
 
 # Before best practices implemented
